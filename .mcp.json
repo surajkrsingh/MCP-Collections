@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "stitch": {
+      "command": "/Users/surajsingh/.nvm/versions/node/v22.22.0/bin/node",
+      "args": [
+        "/Users/surajsingh/.nvm/versions/node/v22.22.0/lib/node_modules/mcp-remote/dist/proxy.js",
+        "https://stitch.googleapis.com/mcp",
+        "--header",
+        "X-Goog-Api-Key: ${GOOGLE_STITCH_API_KEY}"
+      ]
+    },
+    "context7": {
+      "command": "/Users/surajsingh/.nvm/versions/node/v22.22.0/bin/node",
+      "args": [
+        "/Users/surajsingh/.nvm/versions/node/v22.22.0/lib/node_modules/mcp-remote/dist/proxy.js",
+        "https://mcp.context7.com/mcp",
+        "--header",
+        "CONTEXT7_API_KEY: ${CONTEXT7_API_KEY}"
+      ]
+    },
+    "github": {
+      "command": "github-mcp-server",
+      "args": [
+        "stdio"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    }
+  }
+}
