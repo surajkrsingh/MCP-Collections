@@ -114,9 +114,9 @@ Four files to update:
 
 ```json
 "your-server": {
-  "command": "node",
+  "command": "npx",
   "args": [
-    "/path/to/mcp-remote/dist/proxy.js",
+    "mcp-remote",
     "https://your-endpoint.com/mcp",
     "--header",
     "Authorization: Bearer ${YOUR_API_KEY}"

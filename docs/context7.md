@@ -23,9 +23,9 @@ export CONTEXT7_API_KEY="your-context7-api-key"
 ```json
 {
   "context7": {
-    "command": "node",
+    "command": "npx",
     "args": [
-      "/path/to/mcp-remote/dist/proxy.js",
+      "mcp-remote",
       "https://mcp.context7.com/mcp",
       "--header",
       "CONTEXT7_API_KEY: ${CONTEXT7_API_KEY}"

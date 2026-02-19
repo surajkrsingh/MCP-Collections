@@ -23,9 +23,9 @@ export GOOGLE_STITCH_API_KEY="your-stitch-api-key"
 ```json
 {
   "stitch": {
-    "command": "node",
+    "command": "npx",
     "args": [
-      "/path/to/mcp-remote/dist/proxy.js",
+      "mcp-remote",
       "https://stitch.googleapis.com/mcp",
       "--header",
       "X-Goog-Api-Key: ${GOOGLE_STITCH_API_KEY}"
