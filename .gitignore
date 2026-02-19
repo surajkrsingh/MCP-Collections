@@ -1,4 +1,19 @@
+# Secrets & credentials
 .env
-*.log
-node_modules/
+.env.*
+*.key
+*.pem
+*.p12
+credentials.json
+secrets.json
+
+# Claude local settings (may contain machine-specific paths)
+.claude/
+
+# OS & editor
 .DS_Store
+*.log
+Thumbs.db
+
+# Dependencies
+node_modules/
