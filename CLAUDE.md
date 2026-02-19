@@ -10,7 +10,7 @@ This is a frontend UI prototyping workspace that uses **Google Stitch** (via MCP
 
 The project connects to the Stitch design tool via MCP (`mcp-remote` proxy). The API key is provided through the `GOOGLE_STITCH_API_KEY` environment variable.
 
-**All Stitch, Context7, and GitHub MCP tools are pre-approved — use them freely without asking for permission.**
+**All Stitch, Context7, GitHub, and Playwright MCP tools are pre-approved — use them freely without asking for permission.**
 
 **Typical workflow:**
 1. `mcp__stitch__list_projects` — list available Stitch projects
@@ -27,6 +27,10 @@ Use Context7 (`mcp__context7__resolve-library-id` and `mcp__context7__query-docs
 ## MCP Integration — GitHub
 
 Use the GitHub MCP server (`mcp__github__*`) to interact with repositories, issues, pull requests, GitHub Actions, and code security. Runs locally via the `github-mcp-server` binary with a `GITHUB_PERSONAL_ACCESS_TOKEN`. Use it for browsing repos, creating issues/PRs, checking CI status, and reviewing code — all without leaving the editor.
+
+## MCP Integration — Playwright
+
+Use Playwright MCP (`mcp__playwright__*`) for browser automation — navigate pages, click elements, fill forms, take screenshots, and scrape content. Runs locally via `npx @playwright/mcp@latest`. No API key needed. Uses accessibility snapshots by default (fast, low-token). Add `--headless` for CI or background use.
 
 ## Security — MUST follow before every commit/push
 

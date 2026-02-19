@@ -9,6 +9,7 @@ A curated collection of [MCP](https://modelcontextprotocol.io/) (Model Context P
 | **Google Stitch** | Generate, edit, and iterate on UI designs from text prompts | [docs/google-stitch.md](docs/google-stitch.md) |
 | **Context7** | Look up current documentation and code examples for any library | [docs/context7.md](docs/context7.md) |
 | **GitHub** | Interact with repos, issues, PRs, actions, and code security | [docs/github.md](docs/github.md) |
+| **Playwright** | Browser automation — navigate, click, fill forms, screenshot, scrape | [docs/playwright.md](docs/playwright.md) |
 
 > More MCPs will be added over time. See [Adding a new MCP](#adding-a-new-mcp) below.
 
@@ -61,7 +62,8 @@ MCP-Collections/
 ├── docs/
 │   ├── google-stitch.md       # Stitch setup, tools, and examples
 │   ├── context7.md            # Context7 setup, tools, and examples
-│   └── github.md              # GitHub MCP setup, tools, and examples
+│   ├── github.md              # GitHub MCP setup, tools, and examples
+│   └── playwright.md          # Playwright browser automation
 └── README.md
 ```
 
@@ -97,6 +99,14 @@ Claude fetches the latest docs and gives you an accurate answer with working cod
 ```
 
 Claude queries GitHub directly and returns structured results. See [full GitHub docs](docs/github.md) for all tools and examples.
+
+### Automate a browser with Playwright
+
+```
+> Navigate to https://news.ycombinator.com and list the top 5 stories
+```
+
+Claude opens a browser, reads the page, and returns the results. See [full Playwright docs](docs/playwright.md) for all tools and examples.
 
 ### Combine MCPs
 
